@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="2" tests="6" errors="0" name="Tests-Android" skip="0">
+<testcase classname="Tests-Android.Android Example" name="Simple Smoke Test - Correct Answer" time="26">
+</testcase>
+<testcase classname="Tests-Android.Android Example" name="Simple Smoke Test - Wrong Answer" time="24">
+</testcase>
+<testcase classname="Tests-Android.Android Example" name="Simple Smoke Test - Wrong Answer 2" time="22">
+</testcase>
+<testcase classname="Tests-Android.Android Example" name="Simple Smoke Test - Fails Intentionally" time="31">
+<failure message="Text 'Congratulations John' did not appear in 5 seconds" type="AssertionError"></failure>
+</testcase>
+<testcase classname="Tests-Android.Chrome Example" name="Chrome Smoke Test - Correct Style" time="15">
+</testcase>
+<testcase classname="Tests-Android.Chrome Example" name="Chrome Smoke Test - Fails Intentionally" time="20">
+<failure message="Element 'xpath = //button[contains(@style, &quot;rgb(127, 255, 0)&quot;)]' did not appear in 5 seconds" type="AssertionError"></failure>
+</testcase>
+</testsuite>

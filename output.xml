@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180921 09:51:19.866" generator="Robot 3.0.2 (Python 2.7.10 on darwin)">
+<suite source="/Users/pawinee/Downloads/testdroid-samples-master/robot-framework/tests-android" id="s1" name="Tests-Android">
+<suite source="/Users/pawinee/Downloads/testdroid-samples-master/robot-framework/tests-android/android_example.robot" id="s1-s1" name="Android Example">
+<test id="s1-s1-t1" name="Simple Smoke Test - Correct Answer">
+<kw name="Set Up And Open Android Application" library="common">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME_ANDROID}</arg>
+<arg>testdroid_username=${TESTDROIDUSERNAME}</arg>
+<arg>testdroid_password=${TESTDROIDPASSWORD} #testdroid_apiKey=${TESTDROIDAPIKEY}#platformVersion=${PLATFORM_VERSION_ANDROID}</arg>
+<arg>testdroid_project=${TESTDROID_PROJECT}</arg>
+<arg>testdroid_device=${TESTDROID_DEVICE}</arg>
+<arg>testdroid_app=${APP_ANDROID}</arg>
+<arg>testdroid_testrun=${TESTDROID_TESTRUN}</arg>
+<arg>testdroid_target=Android</arg>
+</arguments>
+<kw name="Capture Screenshot On Failure" library="common">
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>${SCREENSHOTS}${/}${TEST NAME}.png</arg>
+</arguments>
+<msg timestamp="20180921 09:51:23.226" level="FAIL">No application is open</msg>
+<status status="FAIL" endtime="20180921 09:51:23.227" starttime="20180921 09:51:23.222"></status>
+</kw>
+<status status="FAIL" endtime="20180921 09:51:23.227" starttime="20180921 09:51:23.221"></status>
+</kw>
+<msg timestamp="20180921 09:51:23.227" level="WARN">Keyword 'Capture Screenshot On Failure' could not be run on failure: No application is open</msg>
+<msg timestamp="20180921 09:51:23.229" level="FAIL">SessionNotCreatedException: Message: com.testdroid.api.APIException: Failed to acquire access token. Reason: null
+</msg>
+<status status="FAIL" endtime="20180921 09:51:23.229" starttime="20180921 09:51:20.071"></status>
+</kw>
+<status status="FAIL" endtime="20180921 09:51:23.229" starttime="20180921 09:51:20.071"></status>
+</kw>
+<kw type="teardown" name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<kw name="Capture Screenshot On Failure" library="common">
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>${SCREENSHOTS}${/}${TEST NAME}.png</arg>
+</arguments>
+<msg timestamp="20180921 09:51:23.232" level="FAIL">No application is open</msg>
+<status status="FAIL" endtime="20180921 09:51:23.232" starttime="20180921 09:51:23.231"></status>
+</kw>
+<status status="FAIL" endtime="20180921 09:51:23.232" starttime="20180921 09:51:23.230"></status>
+</kw>
+<msg timestamp="20180921 09:51:23.232" level="WARN">Keyword 'Capture Screenshot On Failure' could not be run on failure: No application is open</msg>
+<msg timestamp="20180921 09:51:23.233" level="FAIL">No application is open</msg>
+<status status="FAIL" endtime="20180921 09:51:23.233" starttime="20180921 09:51:23.230">No application is open</status>
+</kw>
+<tags>
+<tag>cloud</tag>
+</tags>
+<status status="FAIL" endtime="20180921 09:51:23.233" critical="yes" starttime="20180921 09:51:20.070">SessionNotCreatedException: Message: com.testdroid.api.APIException: Failed to acquire access token. Reason: null
+
+
+Also teardown failed:
+No application is open</status>
+</test>
+<test id="s1-s1-t2" name="Simple Smoke Test - Wrong Answer">
+<kw name="Set Up And Open Android Application" library="common">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME_ANDROID}</arg>
+<arg>testdroid_username=${TESTDROIDUSERNAME}</arg>
+<arg>testdroid_password=${TESTDROIDPASSWORD} #testdroid_apiKey=${TESTDROIDAPIKEY}#platformVersion=${PLATFORM_VERSION_ANDROID}</arg>
+<arg>testdroid_project=${TESTDROID_PROJECT}</arg>
+<arg>testdroid_device=${TESTDROID_DEVICE}</arg>
+<arg>testdroid_app=${APP_ANDROID}</arg>
+<arg>testdroid_testrun=${TESTDROID_TESTRUN}</arg>
+<arg>testdroid_target=Android</arg>
+</arguments>
+<kw name="Capture Screenshot On Failure" library="common">
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>${SCREENSHOTS}${/}${TEST NAME}.png</arg>
+</arguments>
+<msg timestamp="20180921 09:51:25.183" level="FAIL">No application is open</msg>
+<status status="FAIL" endtime="20180921 09:51:25.183" starttime="20180921 09:51:25.182"></status>
+</kw>
+<status status="FAIL" endtime="20180921 09:51:25.183" starttime="20180921 09:51:25.181"></status>
+</kw>
+<msg timestamp="20180921 09:51:25.183" level="WARN">Keyword 'Capture Screenshot On Failure' could not be run on failure: No application is open</msg>
+<msg timestamp="20180921 09:51:25.184" level="FAIL">SessionNotCreatedException: Message: com.testdroid.api.APIException: Failed to acquire access token. Reason: null
+</msg>
+<status status="FAIL" endtime="20180921 09:51:25.184" starttime="20180921 09:51:23.234"></status>
+</kw>
+<status status="FAIL" endtime="20180921 09:51:25.184" starttime="20180921 09:51:23.234"></status>
+</kw>
+<kw type="teardown" name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<kw name="Capture Screenshot On Failure" library="common">
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>${SCREENSHOTS}${/}${TEST NAME}.png</arg>
+</arguments>
+<msg timestamp="20180921 09:51:25.186" level="FAIL">No application is open</msg>
+<status status="FAIL" endtime="20180921 09:51:25.186" starttime="20180921 09:51:25.185"></status>
+</kw>
+<status status="FAIL" endtime="20180921 09:51:25.186" starttime="20180921 09:51:25.184"></status>
+</kw>
+<msg timestamp="20180921 09:51:25.186" level="WARN">Keyword 'Capture Screenshot On Failure' could not be run on failure: No application is open</msg>
+<msg timestamp="20180921 09:51:25.187" level="FAIL">No application is open</msg>
+<status status="FAIL" endtime="20180921 09:51:25.187" starttime="20180921 09:51:25.184">No application is open</status>
+</kw>
+<tags>
+<tag>101</tag>
+</tags>
+<status status="FAIL" endtime="20180921 09:51:25.187" critical="yes" starttime="20180921 09:51:23.233">SessionNotCreatedException: Message: com.testdroid.api.APIException: Failed to acquire access token. Reason: null
+
+
+Also teardown failed:
+No application is open</status>
+</test>
+<test id="s1-s1-t3" name="Simple Smoke Test - Wrong Answer 2">
+<kw name="Set Up And Open Android Application" library="common">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME_ANDROID}</arg>
+<arg>testdroid_username=${TESTDROIDUSERNAME}</arg>
+<arg>testdroid_password=${TESTDROIDPASSWORD} #testdroid_apiKey=${TESTDROIDAPIKEY}#platformVersion=${PLATFORM_VERSION_ANDROID}</arg>
+<arg>testdroid_project=${TESTDROID_PROJECT}</arg>
+<arg>testdroid_device=${TESTDROID_DEVICE}</arg>
+<arg>testdroid_app=${APP_ANDROID}</arg>
+<arg>testdroid_testrun=${TESTDROID_TESTRUN}</arg>
+<arg>testdroid_target=Android</arg>
+</arguments>
+<kw name="Capture Screenshot On Failure" library="common">
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>${SCREENSHOTS}${/}${TEST NAME}.png</arg>
+</arguments>
+<msg timestamp="20180921 09:51:27.087" level="FAIL">No application is open</msg>
+<status status="FAIL" endtime="20180921 09:51:27.087" starttime="20180921 09:51:27.086"></status>
+</kw>
+<status status="FAIL" endtime="20180921 09:51:27.088" starttime="20180921 09:51:27.086"></status>
+</kw>
+<msg timestamp="20180921 09:51:27.088" level="WARN">Keyword 'Capture Screenshot On Failure' could not be run on failure: No application is open</msg>
+<msg timestamp="20180921 09:51:27.088" level="FAIL">SessionNotCreatedException: Message: com.testdroid.api.APIException: Failed to acquire access token. Reason: null
+</msg>
+<status status="FAIL" endtime="20180921 09:51:27.088" starttime="20180921 09:51:25.188"></status>
+</kw>
+<status status="FAIL" endtime="20180921 09:51:27.088" starttime="20180921 09:51:25.188"></status>
+</kw>
+<kw type="teardown" name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<kw name="Capture Screenshot On Failure" library="common">
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>${SCREENSHOTS}${/}${TEST NAME}.png</arg>
+</arguments>
+<msg timestamp="20180921 09:51:27.090" level="FAIL">No application is open</msg>
+<status status="FAIL" endtime="20180921 09:51:27.090" starttime="20180921 09:51:27.089"></status>
+</kw>
+<status status="FAIL" endtime="20180921 09:51:27.090" starttime="20180921 09:51:27.089"></status>
+</kw>
+<msg timestamp="20180921 09:51:27.091" level="WARN">Keyword 'Capture Screenshot On Failure' could not be run on failure: No application is open</msg>
+<msg timestamp="20180921 09:51:27.091" level="FAIL">No application is open</msg>
+<status status="FAIL" endtime="20180921 09:51:27.091" starttime="20180921 09:51:27.089">No application is open</status>
+</kw>
+<tags>
+<tag>mom</tag>
+</tags>
+<status status="FAIL" endtime="20180921 09:51:27.091" critical="yes" starttime="20180921 09:51:25.187">SessionNotCreatedException: Message: com.testdroid.api.APIException: Failed to acquire access token. Reason: null
+
+
+Also teardown failed:
+No application is open</status>
+</test>
+<test id="s1-s1-t4" name="Simple Smoke Test - Fails Intentionally">
+<kw name="Set Up And Open Android Application" library="common">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME_ANDROID}</arg>
+<arg>testdroid_username=${TESTDROIDUSERNAME}</arg>
+<arg>testdroid_password=${TESTDROIDPASSWORD} #testdroid_apiKey=${TESTDROIDAPIKEY}#platformVersion=${PLATFORM_VERSION_ANDROID}</arg>
+<arg>testdroid_project=${TESTDROID_PROJECT}</arg>
+<arg>testdroid_device=${TESTDROID_DEVICE}</arg>
+<arg>testdroid_app=${APP_ANDROID}</arg>
+<arg>testdroid_testrun=${TESTDROID_TESTRUN}</arg>
+<arg>testdroid_target=Android</arg>
+</arguments>
+<kw name="Capture Screenshot On Failure" library="common">
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>${SCREENSHOTS}${/}${TEST NAME}.png</arg>
+</arguments>
+<msg timestamp="20180921 09:51:29.340" level="FAIL">No application is open</msg>
+<status status="FAIL" endtime="20180921 09:51:29.340" starttime="20180921 09:51:29.338"></status>
+</kw>
+<status status="FAIL" endtime="20180921 09:51:29.340" starttime="20180921 09:51:29.338"></status>
+</kw>
+<msg timestamp="20180921 09:51:29.340" level="WARN">Keyword 'Capture Screenshot On Failure' could not be run on failure: No application is open</msg>
+<msg timestamp="20180921 09:51:29.340" level="FAIL">SessionNotCreatedException: Message: com.testdroid.api.APIException: Failed to acquire access token. Reason: null
+</msg>
+<status status="FAIL" endtime="20180921 09:51:29.340" starttime="20180921 09:51:27.092"></status>
+</kw>
+<status status="FAIL" endtime="20180921 09:51:29.341" starttime="20180921 09:51:27.092"></status>
+</kw>
+<kw type="teardown" name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<kw name="Capture Screenshot On Failure" library="common">
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>${SCREENSHOTS}${/}${TEST NAME}.png</arg>
+</arguments>
+<msg timestamp="20180921 09:51:29.342" level="FAIL">No application is open</msg>
+<status status="FAIL" endtime="20180921 09:51:29.343" starttime="20180921 09:51:29.341"></status>
+</kw>
+<status status="FAIL" endtime="20180921 09:51:29.343" starttime="20180921 09:51:29.341"></status>
+</kw>
+<msg timestamp="20180921 09:51:29.343" level="WARN">Keyword 'Capture Screenshot On Failure' could not be run on failure: No application is open</msg>
+<msg timestamp="20180921 09:51:29.343" level="FAIL">No application is open</msg>
+<status status="FAIL" endtime="20180921 09:51:29.343" starttime="20180921 09:51:29.341">No application is open</status>
+</kw>
+<tags>
+<tag>fail</tag>
+</tags>
+<status status="FAIL" endtime="20180921 09:51:29.343" critical="yes" starttime="20180921 09:51:27.091">SessionNotCreatedException: Message: com.testdroid.api.APIException: Failed to acquire access token. Reason: null
+
+
+Also teardown failed:
+No application is open</status>
+</test>
+<status status="FAIL" endtime="20180921 09:51:29.344" starttime="20180921 09:51:19.888"></status>
+</suite>
+<status status="FAIL" endtime="20180921 09:51:29.346" starttime="20180921 09:51:19.868"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="4" pass="0">Critical Tests</stat>
+<stat fail="4" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="0">101</stat>
+<stat fail="1" pass="0">cloud</stat>
+<stat fail="1" pass="0">fail</stat>
+<stat fail="1" pass="0">mom</stat>
+</tag>
+<suite>
+<stat fail="4" id="s1" name="Tests-Android" pass="0">Tests-Android</stat>
+<stat fail="4" id="s1-s1" name="Android Example" pass="0">Tests-Android.Android Example</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20180921 09:51:23.227" level="WARN">Keyword 'Capture Screenshot On Failure' could not be run on failure: No application is open</msg>
+<msg timestamp="20180921 09:51:23.232" level="WARN">Keyword 'Capture Screenshot On Failure' could not be run on failure: No application is open</msg>
+<msg timestamp="20180921 09:51:25.183" level="WARN">Keyword 'Capture Screenshot On Failure' could not be run on failure: No application is open</msg>
+<msg timestamp="20180921 09:51:25.186" level="WARN">Keyword 'Capture Screenshot On Failure' could not be run on failure: No application is open</msg>
+<msg timestamp="20180921 09:51:27.088" level="WARN">Keyword 'Capture Screenshot On Failure' could not be run on failure: No application is open</msg>
+<msg timestamp="20180921 09:51:27.091" level="WARN">Keyword 'Capture Screenshot On Failure' could not be run on failure: No application is open</msg>
+<msg timestamp="20180921 09:51:29.340" level="WARN">Keyword 'Capture Screenshot On Failure' could not be run on failure: No application is open</msg>
+<msg timestamp="20180921 09:51:29.343" level="WARN">Keyword 'Capture Screenshot On Failure' could not be run on failure: No application is open</msg>
+</errors>
+</robot>
